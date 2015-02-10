@@ -54,6 +54,7 @@
     <Compile Include="Interfaces\IUserRegistration.cs" />
     <Compile Include="MembershipEmailSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterIOC.cs" />
     <Compile Include="RegistrationControler.cs" />
     <Compile Include="SMTPService.cs" />
     <Compile Include="UserEmailSender.cs" />

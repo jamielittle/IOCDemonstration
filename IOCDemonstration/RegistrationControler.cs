@@ -17,8 +17,9 @@ namespace IOCDemonstration
                 new UserEmailSender(new SMTPService()),
                 new MembershipEmailSender(new SMTPService()));
 
-            // With IOC Container (container walks down dependency chain)
-            IUserRegistration userRegistration = ObjectFactory.GetInstance<IUserRegistration>();
+            // With IOC Container (container walks down dependency chain to avoid the complexity of the above)
+            Container container = new Container();
+            IUserRegistration userRegistration = container.GetInstance<IUserRegistration>();
         }
     }
 }
