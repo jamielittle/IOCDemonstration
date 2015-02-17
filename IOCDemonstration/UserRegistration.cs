@@ -31,6 +31,8 @@ namespace IOCDemonstration
 
             // Send email to membership department
             _membershipEmailSender.SendEmail(userInfo);
+
+            return true;
         }
     }
 }
